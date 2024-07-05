@@ -57,8 +57,16 @@ export default{
                 </div>
             </div>
         </section>
-        <div id="sign_up">
-            <a href="">SING-UP NOW</a>
+        <div class="container flexed"> 
+            <div id="sing_up">
+                <a href="">SING-UP NOW!</a>
+            </div>
+            <h4>FOLLOW US</h4>
+            <img src="../assets/footer-facebook.png" alt="">
+            <img src="../assets/footer-twitter.png" alt="">
+            <img src="../assets/footer-youtube.png" alt="">
+            <img src="../assets/footer-pinterest.png" alt="">
+            <img src="../assets/footer-periscope.png" alt="">
         </div>
     </footer>
 </template>
@@ -66,6 +74,8 @@ export default{
 <style lang="scss" scoped>
 
 footer {
+    background-color: #303030;
+
     section {
         background-image: url(../assets/footer-bg.jpg);
         color: white;
@@ -84,12 +94,32 @@ footer {
         }
     }
 
-    div {
-        background-color: #303030;
-
-
+    #sing_up {
+        flex-grow: 1;
+        a {
+            color: white;
+            font-weight: 600px;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid blue;
+        }
     }
 
+    .flexed {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    img {
+        margin: 10px;
+    }
+
+    h4 {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
 }
 
 </style>
