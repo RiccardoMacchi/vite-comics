@@ -1,6 +1,23 @@
 <script >
 export default{
-    name: "AppHeader"
+    name: "AppHeader",
+
+    data(){
+        return {
+            menuHeader : [
+                "CHARACTERS",
+                "COMICS",
+                "MOVIES",
+                "TV",
+                "GAMES",
+                "COLLECTIBLES",
+                "VIDEOS",
+                "FANS",
+                "NEWS",
+                "SHOP"
+            ],
+        }
+    }
 }
 
 </script>
@@ -13,16 +30,7 @@ export default{
             </a>
             <nav>
                 <ul>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
+                    <li v-for="menu in menuHeader"><a href="">{{ menu }}</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,10 +45,16 @@ header {
     .container {
         align-items: center;
 
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
         nav{
             flex-grow: 1;
             text-align: right;
-            
+
             ul li {
             display: inline-block;
             }
