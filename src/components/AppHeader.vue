@@ -66,8 +66,16 @@ header {
             }
         }
     }
+}
 
-       
+@media screen and (max-width:560px) {
+
+    .container{
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
 }
 
 </style>

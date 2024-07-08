@@ -61,4 +61,16 @@ section {
         }
     }
 }
+
+// MEDIA QUERY
+
+@media screen and (max-width:520px) {
+    h3 {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+}
 </style>

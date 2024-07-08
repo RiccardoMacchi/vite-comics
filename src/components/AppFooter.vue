@@ -62,11 +62,13 @@ export default{
                 <a href="">SING-UP NOW!</a>
             </div>
             <h4>FOLLOW US</h4>
-            <img src="../assets/footer-facebook.png" alt="">
-            <img src="../assets/footer-twitter.png" alt="">
-            <img src="../assets/footer-youtube.png" alt="">
-            <img src="../assets/footer-pinterest.png" alt="">
-            <img src="../assets/footer-periscope.png" alt="">
+            <div class="icons">
+                <img src="../assets/footer-facebook.png" alt="">
+                <img src="../assets/footer-twitter.png" alt="">
+                <img src="../assets/footer-youtube.png" alt="">
+                <img src="../assets/footer-pinterest.png" alt="">
+                <img src="../assets/footer-periscope.png" alt="">
+            </div>
         </div>
     </footer>
 </template>
@@ -120,7 +122,21 @@ footer {
         margin-right: 20px;
         color: $primary;
     }
+    .icons {
+        text-align: center;
+    }
     
+}
+
+@media screen and (max-width:560px) {
+
+    .flexed{
+        gap: 15px;
+
+        .icons {
+            flex-grow: 1;
+        }
+    }
 }
 
 </style>

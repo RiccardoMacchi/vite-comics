@@ -31,4 +31,18 @@ export default {
         margin: 20px 0;
     }
 }
+
+// Media query
+
+@media screen and (max-width:900px) {
+    .my_card{
+        flex-basis: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width:520px) {
+    .my_card{
+        flex-basis: calc(100% / 2 - 20px);
+    }
+}
 </style>

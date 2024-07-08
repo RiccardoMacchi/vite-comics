@@ -126,6 +126,7 @@ section {
     }
     .container {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 80px 0;
     position: relative;
@@ -135,12 +136,13 @@ section {
         padding: 10px 60px;
         margin: 0 auto;
         background-color: $primary;
+        box-shadow: 4px 3px 5px 0px white;
     }
 
     .serie {
         background-color: $primary;
         padding: 10px 20px;
-        box-shadow: 10px 1px 1px 1px black;
+        box-shadow: 4px 3px 5px 0px white;
         position: absolute;
         transform: translate(0,-50%);
         top: 0;
