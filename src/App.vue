@@ -2,18 +2,21 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppBlueBanner from './components/AppBlueBanner.vue'
+import AppWrapCard from './components/AppWrapCard.vue'
 
 export default{
     components : {
       AppHeader,
       AppFooter,
-      AppBlueBanner
+      AppBlueBanner,
+      AppWrapCard,
     }
 }
 </script>
 
 <template>
   <AppHeader/>
+  <AppWrapCard/>
   <AppBlueBanner/>
   <AppFooter/>
 </template>
