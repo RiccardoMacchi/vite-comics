@@ -91,16 +91,61 @@ export default {
 
 
 <template>
-    <div class="container">
-        <AppCard v-for="comic in comics" :singleComic="comic"/>
-    </div>
+    <section>
+        <div class="wrapimg">
+            <img src="../assets/jumbotron.jpg" alt="jumbo">
+        </div>
+        <div class="container">
+            <div class="serie">
+                <h2>CURRENT SERIES</h2>
+            </div>
+            <AppCard v-for="comic in comics" :singleComic="comic"/>
+            <div class="btn_more">
+                <h2>LOAD MORE</h2>
+            </div>
+        </div>
+        
+    </section>
+
 
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/_variables" as *;
 
-.container {
+
+
+
+section {
+    background-color: black;
+    color: white;
+    
+    .wrapimg {
+        max-height: 60vh;
+        overflow: hidden;
+    }
+    .container {
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 80px 0;
+    position: relative;
+
+    
+    .btn_more {
+        padding: 10px 60px;
+        margin: 0 auto;
+        background-color: $primary;
+    }
+
+    .serie {
+        background-color: $primary;
+        padding: 10px 20px;
+        box-shadow: 10px 1px 1px 1px black;
+        position: absolute;
+        transform: translate(0,-50%);
+        top: 0;
+    }
+}
 }
 
 </style>
