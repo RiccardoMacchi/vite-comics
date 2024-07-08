@@ -39,6 +39,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/_variables" as *;
+
 header {
     background-color: white;
 
@@ -49,6 +51,10 @@ header {
             text-decoration: none;
             color: black;
             font-weight: 600;
+
+            &:hover {
+                color: $primary;
+            }
         }
 
         nav{

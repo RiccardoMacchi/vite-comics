@@ -34,14 +34,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/_variables" as *;
 
 section {
-    background-color: #0282f9;
+    background-color: $primary;
     color: white;
 
     h3{
         font-weight: 400;
-
+        margin-left: -10px;
     }
 
     .container {
@@ -49,12 +50,13 @@ section {
         align-items: center;
 
         img{
+            max-width: 100px;
             transform: scale(0.5);
         }
 
         div{
+            flex-basis: calc(100% / 5);
             display: flex;
-            justify-content: center;
             align-items: center;
         }
     }

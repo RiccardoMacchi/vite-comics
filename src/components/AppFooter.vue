@@ -72,6 +72,7 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/_variables" as *;
 
 footer {
     background-color: #303030;
@@ -99,9 +100,8 @@ footer {
         a {
             color: white;
             font-weight: 600px;
-            text-decoration: none;
             padding: 10px;
-            border: 1px solid blue;
+            border: 1px solid $primary;
         }
     }
 
@@ -118,6 +118,7 @@ footer {
     h4 {
         display: inline-block;
         margin-right: 20px;
+        color: $primary;
     }
     
 }
